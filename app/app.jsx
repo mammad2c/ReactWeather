@@ -14,8 +14,12 @@ ReactDOM.render(
   <HashRouter>
   <div>
     <Nav/>
-    <Route exact path="/" component={Main}/>
-    <Route path="/about" component={About}/>
-    <Route path="/examples" component={Examples}/>
+    <div className="row">
+      <div className="columns medium-6 large-4 small-centered">
+        <Route exact path="/" component={Main}/>
+        <Route path="/about" component={About}/>
+        <Route path="/examples" component={Examples}/>
+      </div>
+    </div>
   </div>
 </HashRouter>, document.getElementById('app'));

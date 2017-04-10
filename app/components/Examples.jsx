@@ -1,12 +1,21 @@
 var React = require('react');
+var {NavLink} = require('react-router-dom');
 
 var Examples = (props) => {
   return (
     <div>
-      <h3>Examples</h3>
+      <h1 className="text-center">Examples</h1>
       <p>
-        Welcome to examples page!
+        Here are a few example locations to try out:
       </p>
+      <ol>
+        <li>
+          <NavLink to='/?location=Mashhad'>Mashhad, MH</NavLink>
+        </li>
+        <li>
+          <NavLink to='/?location=Tehran'>Tehran, TH</NavLink>
+        </li>
+      </ol>
     </div>
   )
 }
