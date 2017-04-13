@@ -14,7 +14,6 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Main: __dirname + '/app/components/Main.jsx',
       Nav: __dirname + '/app/components/Nav.jsx',
       Weather: __dirname + '/app/components/Weather.jsx',
       WeatherForm: __dirname + '/app/components/WeatherForm.jsx',
@@ -23,7 +22,8 @@ module.exports = {
       Examples: __dirname + '/app/components/Examples.jsx',
       openWeatherMap: __dirname + '/app/api/openWeatherMap.jsx',
       ErrorModal: __dirname + '/app/components/ErrorModal.jsx',
-      applicationStyles: __dirname + '/app/styles/app.scss'
+      applicationStyles: __dirname + '/app/styles/app.scss',
+      getParameterByName: __dirname + '/app/api/getParameterByName.js'
     },
     extensions: ['*', '.js', '.jsx']
   },
